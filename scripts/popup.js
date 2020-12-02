@@ -404,8 +404,7 @@
         newFilename += ls.new_file_name + '.' + extension;
       }
       else {
-        newFilename += ls.new_file_name + ls.image_number + '.' + extension;
-        ls.image_number++;
+        newFilename += ls.new_file_name + visibleImages.indexOf(item.url) + '.' + extension;
       }
     }
     else {
